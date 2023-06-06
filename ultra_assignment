@@ -75,7 +75,7 @@ console.log(messagePercentage3);
   let result = concatenateAndMultiply("Hello", "World", 5);
   console.log(result);
 
-//Exercise I
+// Exercise I
 function birthYear(age) {
    const currentYear = 2023;
    const birthYear = currentYear - age;
@@ -86,7 +86,16 @@ console.log(result1);
 
 // Assignment 2 //
 
-//Exercise B
+// Exercise A (Node)
+// ... = returns in console
+// > 1 + 2 ... 3
+// > "hello" ... 'hello'
+// > let favouriteColour = "purple" ... undefined
+// > favouriteColour ... 'purple'
+// > console.log(favouriteColour) ... purple
+// > purple ... undefined
+
+// Exercise B
 function boolChecker(bool) {
     if (typeof bool === "boolean") {
       return "You've given me a bool, thanks!";
@@ -95,7 +104,7 @@ function boolChecker(bool) {
   }
   console.log(boolChecker(true));
 
-  //Exercise C
+  // Exercise C
   function numberChecker(num) {   //we define our function called numberChecker and we assign a parameter called num
     if (num > 20) {  // we create an if statement - if the parameter we assigned earlier is grater than 20 
       return `${num} is greater than 20`;  // it will return the orange sentance
@@ -127,7 +136,7 @@ console.log(result2);
   // Exercise E
 
 
-  //Exercise F
+  // Exercise F
  function checkUsername (username, type){
 if(type=== "admin" || type=== "manager"){
     return "Username valid";
@@ -139,7 +148,7 @@ console.log(checkUsername("Clau", "something"))
 
 
 
-  //Exercise G
+  // Exercise G
   const apolloCountdownMessage = "all engine running... LIFT-OFF!";
   let countdown = 8;
   console.log(apolloCountdownMessage);
@@ -148,7 +157,7 @@ console.log(checkUsername("Clau", "something"))
       countdown--;
   }
 
-  //Exercise H
+  // Exercise H
   function exponential(number) {
     return number * number;
   }
@@ -162,4 +171,4 @@ console.log(checkUsername("Clau", "something"))
     console.log(`Exponential of ${i} is ${result}`);
 }}
 
-  //Exercise I
+  // Exercise I
