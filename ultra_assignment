@@ -1,0 +1,165 @@
+// Assignment 1 //
+
+// Exercise A
+console.log("Hello World!");
+
+// Exercise B
+"Hello, world!"; // English
+"Bonjour, monde!"; // French
+"Oie, mundinho!"; // Brazilian
+"こんにちは世界!"; // Japanese
+"헬로 월드!"; // Korean
+"नमस्कार संसार्डो!"; // Nepal
+"Kia ora te Ao!"; // Maorí
+"Como tamos, mundito!"; // Chilean
+"Mari mari, mapu mew!"; // Mapuche
+"Jallalla, pachamama!"; // Aymará
+
+// Exercise C
+const greeting = "Buen día con sandía";
+console.log(greeting);
+console.log(greeting);
+console.log(greeting);
+
+// Exercise D
+const colors = ("blue", "yellow");
+const colorsType = typeof colors;
+console.log("the type of colors is " + colorsType);
+
+
+// Exercise E
+const greetingZ = "Hi, my name is ";
+const name="Roque";
+const message = greetingZ + name;
+console.log(message);
+
+
+// Exercise F
+const numberOfStudents1 = 15;
+const numberOfMentors1 = 8;
+const sum1=numberOfStudents1+numberOfMentors1;
+console.log(sum1);
+const message1="The total number is: ";
+const message2=message1 + sum1;
+console.log(message2);
+
+// Exercise G
+//% for mentors
+const numberOfStudents2 = 15;
+const numberOfMentors2 = 8;
+const sum2=numberOfStudents2+numberOfMentors2;
+const percentage1=(numberOfMentors2/sum2*100);
+console.log(percentage1);
+const roundPercentage1 = Math.round(percentage1);
+console.log(roundPercentage1)
+const messagePercentage1= roundPercentage1 + "%";
+console.log(messagePercentage1);
+
+//% for students
+const numberOfStudents3 = 15;
+const numberOfMentors3 = 8;
+const sum3=numberOfStudents3+numberOfMentors3;
+const percentage3=(numberOfStudents3/sum3*100);
+console.log(percentage3);
+const roundPercentage3 = Math.round(percentage3);
+console.log(roundPercentage3)
+const messagePercentage3= roundPercentage3 + "%";
+console.log(messagePercentage3);
+
+// Exercise H
+  function concatenateAndMultiply(string1, string2, number) {
+    let concatenatedString = string1 + string2;
+    let multipliedNumber = number * 2;
+    return concatenatedString + multipliedNumber;
+  }
+  let result = concatenateAndMultiply("Hello", "World", 5);
+  console.log(result);
+
+//Exercise I
+function birthYear(age) {
+   const currentYear = 2023;
+   const birthYear = currentYear - age;
+   return birthYear;
+}
+let result1 = birthYear(23);
+console.log(result1);
+
+// Assignment 2 //
+
+//Exercise B
+function boolChecker(bool) {
+    if (typeof bool === "boolean") {
+      return "You've given me a bool, thanks!";
+    }
+    return "No bool, not cool.";
+  }
+  console.log(boolChecker(true));
+
+  //Exercise C
+  function numberChecker(num) {   //we define our function called numberChecker and we assign a parameter called num
+    if (num > 20) {  // we create an if statement - if the parameter we assigned earlier is grater than 20 
+      return `${num} is greater than 20`;  // it will return the orange sentance
+    } else if (num === 20) { // if num is not over 20, it will pass to the next iteration; here, if num equals 20
+      return `${num} is equal to 20`;
+    } else if (num < 20) {
+      return `${num} is less than 20`;// if num is not under 20, it will pass to the next iteration
+    } else { //if it`s not a number
+      return `${num} isn't even a number :(`; // it will return the orange sentence
+    } //end of statement
+  } //end of function
+
+  // Exercise D
+  function mood(a){
+    if(a === "Happy"){
+    return "Good job, you're doing great!";
+}
+else if (a === "Sad"){
+return "Every cloud has a silver lining"
+}
+else if (a>0) {
+return "Beep beep boop";
+} else {
+return "I'm sorry, I'm still learning about feelings!"
+}
+const result2=mood("Happy")
+console.log(result2);
+}
+  // Exercise E
+
+
+  //Exercise F
+ function checkUsername (username, type){
+if(type=== "admin" || type=== "manager"){
+    return "Username valid";
+}
+ }
+console.log(checkUsername("Roque", "manager"))
+console.log(checkUsername("Deeana", "admin"))
+console.log(checkUsername("Clau", "something"))
+
+
+
+  //Exercise G
+  const apolloCountdownMessage = "all engine running... LIFT-OFF!";
+  let countdown = 8;
+  console.log(apolloCountdownMessage);
+  while (countdown>=0) {
+      console.log(countdown)
+      countdown--;
+  }
+
+  //Exercise H
+  function exponential(number) {
+    return number * number;
+  }
+  
+  function isEven(number) {
+    return number % 2 === 0;
+  }
+  for (let i = 5; i < 21; i++) {
+  if (isEven(i)) {
+    const result = exponential(i);
+    console.log(`Exponential of ${i} is ${result}`);
+}}
+
+  //Exercise I
